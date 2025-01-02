@@ -1,0 +1,287 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin: 20px 0;
+}
+
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+/* Media Queries */
+
+/* For screens smaller than 768px (tablets and below) */
+@media screen and (max-width: 768px) {
+    table {
+        width: 95%;
+        font-size: 12px;
+        /* Smaller text size for readability */
+    }
+
+    th,
+    td {
+        padding: 6px;
+        /* Reduce padding for smaller screens */
+    }
+
+    th {
+        font-size: 16px;
+    }
+
+    td {
+        font-size: 14px;
+    }
+}
+
+/* For screens smaller than 480px (mobile phones) */
+@media screen and (max-width: 480px) {
+    table {
+        width: 100%;
+        font-size: 12px;
+        /* Smaller text size */
+        margin: 10px;
+    }
+
+    th,
+    td {
+        padding: 5px;
+        /* Further reduce padding */
+    }
+
+    th {
+        font-size: 14px;
+    }
+
+    td {
+        font-size: 12px;
+    }
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #f8f9fa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.form-input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+}
+
+.form-button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-button:hover {
+    background-color: #0056b3;
+}
+
+/* Navbar Styles */
+nav {
+    /* Dark background for the navbar */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+nav a {
+    color: black;
+    /* White text for links */
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    background: #007bff;
+    /* Blue highlight on hover */
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    nav .container {
+        /* Stack items vertically */
+        text-align: center;
+    }
+
+    nav ul {
+        /* Stack nav links vertically */
+        gap: 15px;
+    }
+
+    nav li {
+        font-size: 0.9rem;
+        /* Slightly smaller font size */
+    }
+}
+
+/* For mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        padding: 10px 0;
+        /* Reduce padding */
+    }
+
+    nav ul {
+        gap: 10px;
+        /* Reduce gap between links */
+    }
+
+    nav li {
+        font-size: 0.85rem;
+        /* Even smaller font size for mobiles */
+    }
+
+    nav a {
+        padding: 6px 10px;
+        /* Reduce padding inside links */
+    }
+}
+
+
+.document-container {
+    margin: 20px;
+    padding: 10px;
+}
+
+.booking-summary {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.booking-summary p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.booking-summary strong {
+    color: #333;
+}
+
+/* Media Queries */
+
+/* For screens smaller than 768px (tablets and below) */
+@media screen and (max-width: 768px) {
+    .document-container {
+        margin: 15px;
+        padding: 15px;
+    }
+
+    .booking-summary {
+        padding: 15px;
+    }
+
+    .booking-summary p {
+        font-size: 14px;
+    }
+
+    .booking-summary strong {
+        font-size: 15px;
+    }
+}
+
+/* For screens smaller than 480px (mobile phones) */
+@media screen and (max-width: 480px) {
+    .document-container {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .booking-summary {
+        padding: 12px;
+    }
+
+    .booking-summary p {
+        font-size: 12px;
+    }
+
+    .booking-summary strong {
+        font-size: 14px;
+    }
+}
