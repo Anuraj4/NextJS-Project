@@ -17,7 +17,8 @@ const Home = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:5000/api/bookings', formData);
+      /* eslint-disable @typescript-eslint/no-unused-vars */
+      const res = await axios.post('https://nextjs-project-backend.onrender.com', formData);
       alert('Booking successful!');
     } catch (error) {
       alert('Error booking table');
